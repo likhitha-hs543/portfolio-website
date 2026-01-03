@@ -234,17 +234,36 @@ body {
 .hero-subtitle .highlight-word {
     color: var(--color-white);
     cursor: default;
-    transition: var(--transition-smooth);
-}
-
-.hero-subtitle .highlight-word:hover {
-    background: linear-gradient(135deg,
-            var(--color-blue-bright),
-            var(--color-purple-light),
-            var(--color-cyan-glow));
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(90deg,
+            var(--color-white) 0%,
+            var(--color-blue-bright) 25%,
+            var(--color-cyan-glow) 50%,
+            var(--color-blue-bright) 75%,
+            var(--color-white) 100%);
+    background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: shimmer 3s linear infinite;
+}
+
+.hero-subtitle .highlight-word:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 20px rgba(85, 136, 255, 0.6));
+    animation: shimmer 1s linear infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
 }
 
 .hero-subtitle-secondary {
