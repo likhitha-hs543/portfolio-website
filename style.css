@@ -250,12 +250,6 @@ body {
     animation: shimmer 3s linear infinite;
 }
 
-.hero-subtitle .highlight-word:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 20px rgba(85, 136, 255, 0.6));
-    animation: shimmer 1s linear infinite;
-}
-
 @keyframes shimmer {
     0% {
         background-position: 0% center;
