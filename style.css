@@ -399,32 +399,43 @@ body {
 }
 
 /* ========================================
-   About Section
+   Services Section
    ======================================== */
-.about-content {
-    display: flex;
-    justify-content: center;
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-.about-card {
-    max-width: 800px;
+.service-card {
+    text-align: center;
+    padding: 2.5rem 2rem;
 }
 
-.about-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--color-gray-light);
-    margin-bottom: 1.5rem;
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: var(--color-blue-bright);
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
 }
 
-.about-text:last-child {
-    margin-bottom: 0;
+.service-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--color-white);
 }
 
-.about-languages {
-    font-size: 0.95rem;
+.service-desc {
     color: var(--color-gray-medium);
-    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 /* ========================================
