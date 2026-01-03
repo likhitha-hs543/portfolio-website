@@ -639,6 +639,29 @@ body {
     font-size: 0.95rem;
 }
 
+.footer span {
+    color: var(--color-blue-bright);
+    font-weight: 600;
+}
+
+.footer .fa-heart {
+    color: #ff4757;
+    margin: 0 0.25rem;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
 /* ========================================
    Responsive Design
    ======================================== */
