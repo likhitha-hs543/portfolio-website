@@ -28,7 +28,7 @@
     --spacing-xl: 6rem;
 
     /* Effects */
-    --blur-glass: 10px;
+    --blur-glass: 5px;
     --transition-smooth: all 0.3s ease;
 }
 
