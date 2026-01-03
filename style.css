@@ -650,6 +650,32 @@ body {
 /* ========================================
    Contact Section
    ======================================== */
+.contact-intro {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    color: var(--color-white);
+    margin-bottom: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+}
+
+.contact-details {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: var(--color-gray-light);
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+.highlight-text {
+    color: var(--color-blue-bright);
+    font-weight: 600;
+    position: relative;
+}
+
 .contact-content {
     display: flex;
     justify-content: center;
