@@ -627,39 +627,39 @@ body {
 /* ========================================
    Footer
    ======================================== */
-.footer {
-    padding: 2rem;
+.copyright {
+    width: 100%;
     text-align: center;
-    border-top: 1px solid rgba(51, 102, 255, 0.2);
-    margin-top: 4rem;
+    padding: 25px 0;
+    background: #1a1a1a9d;
+    font-weight: 300;
+    margin-top: 10px;
 }
 
-.footer p {
-    color: var(--color-gray-medium);
-    font-size: 0.95rem;
+.copyright p {
+    font-size: 16px;
+    color: #f0bef9;
+    font-family: Menlo, Monaco, 'Courier New', monospace;
 }
 
-.footer span {
-    color: var(--color-blue-bright);
+.copyright i {
+    color: #9300a9;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.copyright i:hover {
+    color: #9300a9;
+    font-weight: 500;
+}
+
+.copyright span {
+    font-family: Menlo, Monaco, 'Courier New', monospace;
+}
+
+.copyright span:hover {
+    color: #9300a9;
     font-weight: 600;
-}
-
-.footer .fa-heart {
-    color: #ff4757;
-    margin: 0 0.25rem;
-    animation: heartbeat 1.5s ease-in-out infinite;
-}
-
-@keyframes heartbeat {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
 }
 
 /* ========================================
