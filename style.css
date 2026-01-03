@@ -228,7 +228,23 @@ body {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    font-weight: 500;
+    font-weight: 700;
+}
+
+.hero-subtitle .highlight-word {
+    color: var(--color-white);
+    cursor: default;
+    transition: var(--transition-smooth);
+}
+
+.hero-subtitle .highlight-word:hover {
+    background: linear-gradient(135deg,
+            var(--color-blue-bright),
+            var(--color-purple-light),
+            var(--color-cyan-glow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .hero-subtitle-secondary {
