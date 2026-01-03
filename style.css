@@ -75,8 +75,15 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    width: 96%;
+    width: 94%;
     max-width: 1400px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar.hidden {
+    transform: translateX(-50%) translateY(-150%);
+    opacity: 0;
+    pointer-events: none;
 }
 
 .navbar.scrolled {
