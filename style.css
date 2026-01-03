@@ -465,7 +465,8 @@ body {
 .service-card {
     text-align: center;
     padding: 2.5rem 2rem;
-    min-width: 400px;
+    min-width: 300px;
+    max-width: 300px;
     flex-shrink: 0;
 }
 
