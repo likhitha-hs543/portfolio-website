@@ -638,18 +638,18 @@ body {
 
 .copyright p {
     font-size: 16px;
-    color: #f0bef9;
+    color: #5eb3f6;
     font-family: Menlo, Monaco, 'Courier New', monospace;
 }
 
 .copyright i {
-    color: #9300a9;
+    color: #3366ff;
     margin-right: 10px;
     font-size: 20px;
 }
 
 .copyright i:hover {
-    color: #9300a9;
+    color: #5588ff;
     font-weight: 500;
 }
 
@@ -658,7 +658,7 @@ body {
 }
 
 .copyright span:hover {
-    color: #9300a9;
+    color: #00d4ff;
     font-weight: 600;
 }
 
