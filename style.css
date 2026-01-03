@@ -434,16 +434,39 @@ body {
 /* ========================================
    Services Section
    ======================================== */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+.services-scroll-container {
+    width: 100%;
+    overflow: hidden;
     margin-top: 3rem;
+    position: relative;
+}
+
+.services-scroll-track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll-left 40s linear infinite;
+    width: fit-content;
+}
+
+.services-scroll-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .service-card {
     text-align: center;
     padding: 2.5rem 2rem;
+    min-width: 350px;
+    flex-shrink: 0;
 }
 
 .service-icon {
