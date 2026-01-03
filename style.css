@@ -71,12 +71,12 @@ body {
    ======================================== */
 .navbar {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.5rem 0;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1000;
-    transition: var(--transition-smooth);
+    width: auto;
+    max-width: 90%;
 }
 
 .navbar.scrolled {
@@ -86,30 +86,37 @@ body {
 }
 
 .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(15, 15, 42, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(51, 102, 255, 0.3);
+    border-radius: 50px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    gap: 3rem;
 }
 
 .logo {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: var(--color-white);
     text-decoration: none;
-    background: linear-gradient(135deg, var(--color-blue-primary), var(--color-purple-light));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    transition: var(--transition-smooth);
+}
+
+.logo:hover {
+    color: var(--color-blue-bright);
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-menu a {
@@ -117,6 +124,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition-smooth);
+    font-size: 0.95rem;
     position: relative;
 }
 
@@ -127,8 +135,8 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--color-blue-primary);
-    transition: var(--transition-smooth);
+    background: var(--color-blue-bright);
+    transition: width 0.3s ease;
 }
 
 .nav-menu a:hover {
