@@ -307,6 +307,8 @@ body {
     display: inline-block;
     position: relative;
     overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .btn-primary {
@@ -698,11 +700,7 @@ body {
     border-radius: 50%;
     background: rgba(15, 15, 42, 0.5);
     backdrop-filter: blur(10px);
-    border: 2px solid transparent;
-    background-image: linear-gradient(rgba(15, 15, 42, 0.5), rgba(15, 15, 42, 0.5)),
-        linear-gradient(135deg, var(--color-blue-bright), var(--color-cyan-glow), var(--color-purple-light));
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
+    border: 2px solid rgba(51, 102, 255, 0.3);
     transition: all 0.4s ease;
     text-decoration: none;
     position: relative;
@@ -717,15 +715,15 @@ body {
     padding: 2px;
     background: linear-gradient(135deg, var(--color-blue-bright), var(--color-cyan-glow), var(--color-purple-light));
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     opacity: 0;
-    transition: opacity 0.4s ease;
 }
 
 .contact-icon-link:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(51, 102, 255, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.167);
 }
 
 .contact-icon-link:hover::before {
@@ -745,8 +743,12 @@ body {
 
 .contact-icon-link i {
     font-size: 1.5rem;
-    color: var(--color-blue-bright);
+    color: rgb(186, 197, 254);
     transition: all 0.3s ease;
+}
+
+.contact-icon-link:hover i {
+    color: var(--color-white);
 }
 
 /* ========================================
