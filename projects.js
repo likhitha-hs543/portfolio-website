@@ -7,7 +7,7 @@ const projectsData = [
     {
         id: 1,
         title: "Worker Stress Analysis System",
-        image: "images/Atmotune.png", // Add your project image URL here (leave empty to use icon)
+        image: "", // Add your project image URL here (leave empty to use icon)
         icon: "psychology", // Fallback icon if no image
         description: "AI system analyzing facial expressions and speech patterns to detect stress in real time. Taught me about handling noisy data, multi-signal reliability, and why accuracy metrics don't always translate to real-world usefulness.",
         tags: ["Python", "Computer Vision", "Speech Analysis", "OpenCV", "Machine Learning"],
@@ -18,7 +18,7 @@ const projectsData = [
     {
         id: 2,
         title: "Atmotune - Weather-Based Music Recommender",
-        image: "", // Add your project image URL here (leave empty to use icon)
+        image: "images/Atmotune.png", // Add your project image URL here (leave empty to use icon)
         icon: "music_note", // Fallback icon if no image
         description: "Web app recommending music playlists based on real-time weather. Explored contextual recommendation using external signals, handled async API data flow, and focused on smooth UI updates across devices.",
         tags: ["JavaScript", "APIs", "Frontend", "Weather API", "Spotify API"],
