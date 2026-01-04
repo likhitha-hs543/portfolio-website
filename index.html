@@ -12,13 +12,14 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Material Symbols & Icons -->
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+        as="style">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -53,8 +54,8 @@
                 Hi, I'm <span class="gradient-text">Likhitha H S</span>
             </h1>
             <p class="hero-subtitle">
-                I BUILD WITH <span class="highlight-word">CLARITY</span>, SHIP WITH <span
-                    class="highlight-word">INTENT</span>.
+                I BUILD WITH <span class="highlight-word">CLARITY</span>,<br>
+                SHIP WITH <span class="highlight-word">INTENT</span>.
             </p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn-primary">View Projects</a>
@@ -231,7 +232,27 @@
                 </a>
             </div>
         </div>
+
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 180" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(51, 102, 255);stop-opacity:0.4" />
+                        <stop offset="25%" style="stop-color:rgb(85, 136, 255);stop-opacity:0.35" />
+                        <stop offset="50%" style="stop-color:rgb(0, 212, 255);stop-opacity:0.4" />
+                        <stop offset="75%" style="stop-color:rgb(135, 85, 255);stop-opacity:0.35" />
+                        <stop offset="100%" style="stop-color:rgb(107, 58, 255);stop-opacity:0.4" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,100 Q150,40 300,100 T600,100 T900,100 T1200,100 L1200,180 L0,180 Z"
+                    fill="url(#waveGradient)"></path>
+                <path d="M0,80 Q200,30 400,80 T800,80 T1200,80 L1200,180 L0,180 Z" fill="url(#waveGradient)"
+                    opacity="0.3"></path>
+            </svg>
+        </div>
     </section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="section">
