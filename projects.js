@@ -51,11 +51,11 @@ const projectsData = [
     {
         id: 5,
         title: "Smart Resume Analyzer (Mini ATS)",
-        image: "images/TaskManager.png", // Add your project image URL here (leave empty to use icon)
+        image: "images/resume-analyzer.png", // Add your project image URL here (leave empty to use icon)
         icon: "edit_note", // Fallback icon if no image
         description: "A Java-based, rule-driven ATS simulation that evaluates resume–job description alignment. Built as a one-session MVP with clean architecture, skill-whitelist filtering, deterministic scoring, and honest documentation of tradeoffs. Delivered as a standalone executable JAR using Maven Wrapper.",
         tags: ["Java 17", "Maven (Wrapper + Shade)", "Apache PDFBox"],
-        liveDemo: "https://task-manager-hazel-two.vercel.app/",
+        liveDemo: "https://smart-resume-analyzer-web.onrender.com/",
         github: "https://github.com/likhitha-hs543/smart-resume-analyzer.git",
         featured: true
     }
